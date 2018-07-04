@@ -21,6 +21,7 @@ namespace SimpleBlog
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
       routes.MapRoute("Login", "login", new { Controller = "Auth", action = "Login" }, namespaces);
+      routes.MapRoute("Logout", "logout", new { Controller = "Auth", action = "Logout" }, namespaces);
 
       routes.MapRoute("Home", "", new { Controller = "Posts", Action = "Index" }, namespaces);
 
